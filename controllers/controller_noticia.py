@@ -1,10 +1,7 @@
 """
 controllers/controller_noticia.py
 
-Módulo responsável pelo controle e gerenciamento de notícias
-
-Classes:
-    ControllerNoticia: Controlador principal para análise, salvamento e listagem de notícias.
+Módulo responsável pelo controle e gerenciamento de notícias.
 """
 
 from models.noticia import Noticia, ClassificacaoNoticia
@@ -13,7 +10,7 @@ class ControllerNoticia:
     """
     Controlador responsável por gerenciar as operações relacionadas a notícias.
 
-    Atributos de Classe:
+    Atributos:
         TERMOS_SUSPEITOS (list): Termos que indicam possível notícia falsa ou duvidosa.
         LIMITE_MINIMO_TEXTO (int): Quantidade mínima de caracteres que um texto deve ter.    
     """
@@ -22,12 +19,10 @@ class ControllerNoticia:
     LIMITE_MINIMO_TEXTO = 10
 
     def __init__(self):
-        """Inicializa o controlador com um repositório de notícias vazio."""
         self.__repositorio_noticias = []
 
     @property
     def listar_noticias(self):
-        """list: Rteorna a lista de notícias salvas no repositório."""
         return self.__repositorio_noticias
 
     def analisar_texto_noticia(self, texto):

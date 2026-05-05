@@ -2,17 +2,13 @@
 models/noticia.py
 
 Módulo responsável pela definição das classes domínio para ntícias.
-
-classe:
-    classificacaoNoticia: Define as classificações válidas para uma notícia.
-    Noticia: Representa uma notícia com texto e classificação validados.
 """
 
 class ClassificacaoNoticia:
     """
     Classe que define as classificações possíveis para uma notícia.
 
-    atributos de Classe:
+    Atributos:
         opcoes_classificacao (list): Lista com as classificações válidas:
             'Duvidosa', 'Confiavel' e 'Falsa'.
     """
@@ -21,18 +17,11 @@ class ClassificacaoNoticia:
 
     @staticmethod
     def resgatar_opcoes_classificacao():
-        """
-        Retorna a lista de classificação válidas para uma notícia.
-
-        Returns:
-            list: Lista contendo as opções 'Duvidosa', 'Confiavel' e 'Falsa'.
-        """
-
         return ClassificacaoNoticia.opcoes_classificacao
 
 class Noticia:
     """
-    Representa uma notícia xom texto e classficação.
+    Classe que representa uma notícia com texto e classficação.
 
     Atributos:
         Texto (str): 0 conteúdo textual da notícia.
@@ -45,8 +34,6 @@ class Noticia:
 
     def __init__(self, texto, classificacao):
         """
-        Inicializa uma Notícia após válidar os parâmtros fornecidos.
-
         Args:
             texto (str): O conteúdo textual da notícia.
             classificação (str): A classificação da notícia.
@@ -76,20 +63,16 @@ class Noticia:
 
     @property
     def texto(self):
-        """str: Retorna o texto da notícia"""
         return self.__texto
     
     @property
     def classificacao(self):
-        """str: Retorna a classificação da notícia"""
         return self.__classificacao
     
     @texto.setter
     def texto(self, texto):
-        """Define um novo texto para a notícia"""
         self.__texto = texto
     
     @classificacao.setter
     def classificacao(self, classificacao):
-        """Define uma nova classificação para a notícia"""
         self.__classificacao = classificacao
