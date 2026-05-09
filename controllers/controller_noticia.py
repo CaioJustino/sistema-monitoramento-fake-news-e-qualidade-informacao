@@ -54,8 +54,9 @@ class ControllerNoticia:
 
         pontuacao_noticia_falsa = 0
 
-        if any(termo in texto for termo in self.TERMOS_SUSPEITOS):
-            pontuacao_noticia_falsa += 1
+        for termo in self.TERMOS_SUSPEITOS:
+            if termo in texto:
+                pontuacao_noticia_falsa += 1
 
         if len(texto) < self.LIMITE_MINIMO_TEXTO:
             pontuacao_noticia_falsa += 1
