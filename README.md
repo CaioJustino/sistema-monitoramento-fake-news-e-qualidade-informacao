@@ -40,7 +40,7 @@ sistema-monitoramento-fake-news-e-qualidade-informacao/
 ## 🚀 Tecnologias Utilizadas
 <br>
 
-- **Python 3.x** (Linguagem de Progrmação)
+- **Python 3.13.11** (Linguagem de Progrmação)
 - **POO** (Programação Orientada a Objetos)
 - **MVC** (Padrão de Arquitetura de Software)
 
