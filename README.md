@@ -1,20 +1,20 @@
 # Sistema de Monitoramento de Fake News e Qualidade da Informação 
 
-O presente trabalho buscou aplicar conceitos de boas práticas de programação a fim de melhorar um sistema mal estruturado de monitoramento de fake news e qualidade da informação, sem reescrevê-lo do zero.
+O presente trabalho buscou aplicar conceitos da disciplina de Boas Práticas de Programação (DIM0501) a fim de melhorar um sistema mal estruturado de monitoramento de fake news e qualidade da informação, sem reescrevê-lo do zero.
 
 <br>
 
 ## 💻 Funcionalidades do Sistema 
 <br>
 
-📰 **Inserir textos de notícias**
-- Realiza o cadastro de notícias.
+- **Cadastrar Notícias**
+  - Adicionar notícias ao repositório do projeto.  
 
-🔎 **Classificação das Notícias**
-- O sistema classifica as notícias como confiável, duvidosa ou falsa.
+- **Classificação das Notícias**
+  - O sistema classifica as notícias como Confiável, Duvidosa ou Falsa.
   
-📝 **Listar as notícias**
-- Faz a listagens das notícias cadastradas.
+- **Listar as Notícias**
+  - Faz a listagens das notícias cadastradas.
 
 <br><br>
 
@@ -28,11 +28,13 @@ sistema-monitoramento-fake-news-e-qualidade-informacao/
 │
 ├── controllers/
 │   ├── __init__.py
-│   └── controller_noticia.py  # Gestão da lógica e análise das notícias 
+│   └── controller_noticia.py  # Gestão da lógica, análise das notícias e mais regras de validação 
 ├── models/
-│   └── noticia.py             # Definição do domínio e regras de validação rigorosa
+│   └── noticia.py             # Definição do domínio e regras de validação
 └── views/
-    └── interface.py           # Camada de interação e abstração do usuário
+    └── interface.py           # Camada de interação, abstração do usuário e regras de validação
+└── app.py                     # Módulo responsável pela execução integrada e centralizada do sistema
+└── README.md
 ```
 
 <br><br>
@@ -49,5 +51,19 @@ sistema-monitoramento-fake-news-e-qualidade-informacao/
 ## ▶️ Como executar o sistema 
 <br>
 
+- **1. Clone este repositório no seu computador:**
+```
+git clone
+```
+
+- **2. Em seguida, acesse o diretório que foi criado na IDE da sua preferência. O nome do diretório será:**
+```
+sistema-monitoramento-fake-news-e-qualidade-informacao
+```
+
+- **3. Por fim, inicie a execução do sistema com o seguinte comando (execute "app" como um módulo):**
+```
+python -m app
+```
 
 **Discentes:** Bruna Eduarda, Caio Victor, Pedro Henrique, Rayssa Beatriz e Tainá Almeida.
