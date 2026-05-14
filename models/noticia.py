@@ -1,7 +1,7 @@
 """
 models/noticia.py
 
-Módulo responsável pela definição das classes domínio para ntícias.
+Módulo responsável pela definição das classes domínio para notícias.
 """
 
 class ClassificacaoNoticia:
