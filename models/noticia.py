@@ -52,9 +52,6 @@ class Noticia:
         elif not texto or not texto.strip():
             raise ValueError("O texto da notícia está vazio.")
 
-        elif not classificacao or not classificacao.strip():
-            raise ValueError("A classificação da notícia está vazia.")
-
         elif classificacao not in ClassificacaoNoticia.resgatar_opcoes_classificacao():
             raise ValueError("A notícia só pode ser classificada como Duvidosa, Confiável ou Falsa.")
 

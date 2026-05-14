@@ -19,9 +19,10 @@ def listar_noticias():
     noticias = controller.listar_noticias
 
     if not noticias:
-        print("Nenhuma notícia cadastrada.")
+        print("\nNenhuma notícia cadastrada.")
         return
 
+    print("\n-------------------")
     for noticia in noticias:
         print("Texto:", noticia.texto)
         print("Classificação:", noticia.classificacao)
@@ -38,7 +39,7 @@ def add_manual():
         TypeError: Se o texto ou classificação não forem strings.
         ValueError: Se o texto ou classificação estiverem vazios ou a classificação for inválida.
     """
-    texto = input("Digite o texto: ")
+    texto = input("\nDigite o texto: ")
     classificacao = input("Digite a classificação (deixe em branco para 'Duvidosa'): ")
 
     if classificacao == "":
@@ -47,9 +48,9 @@ def add_manual():
     try:
         noticia = Noticia(texto, classificacao)
         controller.salvar_noticia(noticia)
-        print("Notícia salva com sucesso!")
+        print("\nNotícia salva com sucesso!")
     except (TypeError, ValueError) as e:
-        print(f"Erro ao salvar notícia: {e}")
+        print(f"\nErro ao salvar notícia: {e}")
 
 
 def add_auto():
@@ -63,15 +64,15 @@ def add_auto():
         TypeError: Se o texto não for uma string.
         ValueError: Se o texto estiver vazio.
     """
-    texto = input("Digite o texto: ")
+    texto = input("\nDigite o texto: ")
 
     try:
         classificacao = controller.analisar_texto_noticia(texto)
         noticia = Noticia(texto, classificacao)
         controller.salvar_noticia(noticia)
-        print(f"Notícia salva com classificação automática: {classificacao}")
+        print(f"\nNotícia salva com classificação automática: {classificacao}!")
     except (TypeError, ValueError) as e:
-        print(f"Erro ao salvar notícia: {e}")
+        print(f"\nErro ao salvar notícia: {e}")
 
 
 def menu():
@@ -98,6 +99,3 @@ def menu():
             break
         else:
             print("Opção inválida. Tente novamente.")
-
-
-menu()

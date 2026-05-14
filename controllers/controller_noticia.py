@@ -96,4 +96,3 @@ class ControllerNoticia:
 
         self.__repositorio_noticias.append(noticia)
         return True
-    
