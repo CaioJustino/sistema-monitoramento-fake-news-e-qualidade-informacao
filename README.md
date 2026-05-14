@@ -53,7 +53,7 @@ sistema-monitoramento-fake-news-e-qualidade-informacao/
 
 - **1. Clone este repositório no seu computador:**
 ```
-git clone
+git clone https://github.com/CaioJustino/sistema-monitoramento-fake-news-e-qualidade-informacao.git
 ```
 
 - **2. Em seguida, acesse o diretório que foi criado na IDE da sua preferência. O nome do diretório será:**
@@ -65,5 +65,7 @@ sistema-monitoramento-fake-news-e-qualidade-informacao
 ```
 python -m app
 ```
+
+<br><br>
 
 **Discentes:** Bruna Eduarda, Caio Victor, Pedro Henrique, Rayssa Beatriz e Tainá Almeida.
