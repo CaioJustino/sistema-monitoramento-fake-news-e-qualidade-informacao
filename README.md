@@ -48,7 +48,7 @@ sistema-monitoramento-fake-news-e-qualidade-informacao/
 
 <br><br>
 
-## ▶️ Como executar o sistema 
+## ▶️ Como Executar o Sistema 
 <br>
 
 - **1. Clone este repositório no seu computador:**
