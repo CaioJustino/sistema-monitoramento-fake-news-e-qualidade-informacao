@@ -81,21 +81,26 @@ def menu():
 
     O menu é exibido em loop em cada escolha até que o usuário escolha a opção de saída.
     """
+    print("\n" + "=" * 77)
+    print("Bem-vindo ao sistema de monitoramento de fake news e qualidade da informação!")
+    print("=" * 77 )
+    
     while True:
         print("\n1 - Adicionar manualmente")
         print("2 - Adicionar com classificação automática")
         print("3 - Listar notícias")
         print("4 - Sair")
 
-        op = input("Opção: ")
+        opcao_escolhida = input("Opção: ")
 
-        if op == "1":
+        if opcao_escolhida == "1":
             add_manual()
-        elif op == "2":
+        elif opcao_escolhida == "2":
             add_auto()
-        elif op == "3":
+        elif opcao_escolhida == "3":
             listar_noticias()
-        elif op == "4":
+        elif opcao_escolhida == "4":
+            print("Obrigado por usar o nosso sistema! Até a próxima!")
             break
         else:
             print("Opção inválida. Tente novamente.")
