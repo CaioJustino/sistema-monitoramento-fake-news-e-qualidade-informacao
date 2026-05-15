@@ -86,8 +86,8 @@ def menu():
     print("=" * 77 )
     
     while True:
-        print("\n1 - Adicionar manualmente")
-        print("2 - Adicionar com classificação automática")
+        print("\n1 - Adicionar texto manualmente")
+        print("2 - Adicionar texto com classificação automática")
         print("3 - Listar notícias")
         print("4 - Sair")
 
